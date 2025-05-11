@@ -27,11 +27,11 @@ const App:React.FC = () => {
       <div className="w-full max-w-4xl px-4 py-6">
         <h1 className="text-3xl font-bold text-center mb-4">天気予報</h1>
 
-        <div className="mb-6">
+        <div className="mb-6">{/*ブロック要素を構成*/}
         <label htmlFor="location-select" className="block mb-2 text-sm font-medium text-gray-700">
           地域を選択
           </label>
-          <select
+          <select //プルダウン形式
           id="location-select"
           value={location}
           onChange={(e)=> setLocation(e.target.value)}
